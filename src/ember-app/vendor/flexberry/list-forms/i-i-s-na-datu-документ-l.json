@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-na-datu-документ-e",
+  "editForm": "i-i-s-na-datu-документ-e",
+  "external": false,
+  "caption": "Документ",
+  "name": "IISNa_datuДокументL",
+  "className": "ДокументL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-na-datu-документ",
+      "modelProjection": "ДокументL"
+    }
+  ]
+}

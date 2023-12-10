@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISNa_datuОтветственный",
+  "modelName": "i-i-s-na-datu-ответственный",
+  "className": "Ответственный",
+  "nameSpace": "IIS.Na_datu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фамилияИ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "стаж",
+      "relatedTo": "i-i-s-na-datu-стаж",
+      "inverse": "ответственный"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ОтветственныйE",
+      "modelName": "i-i-s-na-datu-ответственный",
+      "attrs": [
+        {
+          "name": "фамилияИ",
+          "caption": "Фамилия И",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СтажE",
+          "caption": "Стаж",
+          "name": "стаж",
+          "relatedTo": "i-i-s-na-datu-стаж",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ОтветственныйL",
+      "modelName": "i-i-s-na-datu-ответственный",
+      "attrs": [
+        {
+          "name": "фамилияИ",
+          "caption": "Фамилия И",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

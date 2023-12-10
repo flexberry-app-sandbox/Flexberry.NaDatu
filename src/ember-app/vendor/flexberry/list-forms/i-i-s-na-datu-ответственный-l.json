@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-na-datu-ответственный-e",
+  "editForm": "i-i-s-na-datu-ответственный-e",
+  "external": false,
+  "caption": "Ответственный",
+  "name": "IISNa_datuОтветственныйL",
+  "className": "ОтветственныйL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-na-datu-ответственный",
+      "modelProjection": "ОтветственныйL"
+    }
+  ]
+}

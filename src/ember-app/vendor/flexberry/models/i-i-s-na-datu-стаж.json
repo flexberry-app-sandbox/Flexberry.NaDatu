@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISNa_datuСтаж",
+  "modelName": "i-i-s-na-datu-стаж",
+  "className": "Стаж",
+  "nameSpace": "IIS.Na_datu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "стаж",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ответственный",
+      "relatedTo": "i-i-s-na-datu-ответственный",
+      "inverse": "стаж"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СтажE",
+      "modelName": "i-i-s-na-datu-стаж",
+      "attrs": [
+        {
+          "name": "стаж",
+          "caption": "Стаж",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

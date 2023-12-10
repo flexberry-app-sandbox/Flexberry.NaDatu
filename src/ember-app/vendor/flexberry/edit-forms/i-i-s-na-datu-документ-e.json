@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Ответственный",
+      "projection": "ОтветственныйL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Документ",
+  "name": "IISNa_datuДокументE",
+  "className": "ДокументE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-na-datu-документ",
+      "modelProjection": "ДокументE"
+    }
+  ]
+}

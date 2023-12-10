@@ -1,0 +1,154 @@
+﻿{
+  "name": "IISNa_datuДокумент",
+  "modelName": "i-i-s-na-datu-документ",
+  "className": "Документ",
+  "nameSpace": "IIS.Na_datu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фамилия",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ответственный",
+      "relatedTo": "i-i-s-na-datu-ответственный",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДокументE",
+      "modelName": "i-i-s-na-datu-документ",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФамилияИ",
+          "lookupValueField": "фамилияИ",
+          "relationName": "Ответственный",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилияИ",
+              "caption": "Фамилия И",
+              "hidden": true,
+              "index": 4
+            },
+            {
+              "name": "должность",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Ответственный",
+          "name": "ответственный",
+          "relatedTo": "i-i-s-na-datu-ответственный",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ДокументL",
+      "modelName": "i-i-s-na-datu-документ",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Ответственный",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилияИ",
+              "caption": "Фамилия И",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия И",
+          "name": "ответственный",
+          "relatedTo": "i-i-s-na-datu-ответственный",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

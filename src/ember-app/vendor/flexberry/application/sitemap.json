@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Na_datu",
+  "applicationTitle": "Na_datu",
+  "items": [
+    {
+      "link": null,
+      "menuName": "na-datu",
+      "caption": "Na_datu",
+      "title": "Na_datu",
+      "children": [
+        {
+          "link": "i-i-s-na-datu-документ-l",
+          "menuName": null,
+          "caption": "Документ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-na-datu-ответственный-l",
+          "menuName": null,
+          "caption": "Ответственный",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

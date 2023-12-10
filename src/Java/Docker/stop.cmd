@@ -1,0 +1,1 @@
+docker-compose -p na_datu-java down

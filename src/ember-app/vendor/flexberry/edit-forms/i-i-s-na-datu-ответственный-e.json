@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Ответственный",
+  "name": "IISNa_datuОтветственныйE",
+  "className": "ОтветственныйE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-na-datu-ответственный",
+      "modelProjection": "ОтветственныйE"
+    }
+  ]
+}
